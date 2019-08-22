@@ -1,6 +1,6 @@
 FROM php:7.1-apache
 
-RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libmcrypt-dev unzip less \
+RUN apt-get update && apt-get install -y freetype-dev libpng-dev libjpeg-dev libmcrypt-dev unzip less \
     && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr
