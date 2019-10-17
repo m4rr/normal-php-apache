@@ -9,6 +9,7 @@ Running in production on my blog [Passionflower](https://blog.m4rr.ru/).
 Add yours open source:
 
 - https://github.com/m4rr/blog_m4rr_ru_docker/blob/master/Dockerfile
+- https://hub.docker.com/r/m4rr/normal-php-apache
 
 ## Donate
 
