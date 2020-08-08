@@ -1,4 +1,4 @@
-FROM php:7.1-apache
+FROM php:7.2-apache
 
 RUN apt-get update && apt-get install -y freetype-dev libpng-dev libjpeg-dev libmcrypt-dev unzip less \
     && rm -rf /var/lib/apt/lists/*
