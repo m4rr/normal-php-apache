@@ -7,4 +7,4 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr
 RUN docker-php-ext-configure mcrypt
 RUN docker-php-ext-install gd mbstring mysqli pdo_mysql zip mcrypt
 
-RUN a2enmod rewrite actions
+RUN a2enmod rewrite actions proxy proxy_balancer proxy_https && ervice apache2 restart
