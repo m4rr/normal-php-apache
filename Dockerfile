@@ -1,8 +1,12 @@
-FROM php:7.1-apache
+FROM php:7.2-apache
 
 RUN apt-get update 
 RUN apt-get install -y less unzip
-RUN apt-get install -y freetype-dev libpng-dev libjpeg-dev libmcrypt-dev 
+RUN apt-get install -y \
+    libfreetype6-dev \
+		libjpeg62-turbo-dev \
+		libmcrypt-dev \
+		libpng12-dev
 
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr
 RUN docker-php-ext-configure mcrypt
